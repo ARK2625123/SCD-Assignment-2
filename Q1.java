@@ -8,8 +8,15 @@ import java.util.*;
     }
 
 
-    public void push(T item) {
+    public void push(T item,int size) {
+       if (stack.size()<size)
+        {
         stack.add(item);
+        }
+        else{
+            System.out.println("Stack is full!");
+        }
+        
     }
 
    
@@ -40,9 +47,14 @@ public static void main(String args[])
 {
     
 GenericStack<String> intStack = new GenericStack<>();
-        intStack.push("ha");
-        intStack.push("haha");
-        intStack.push("hahahaha");
+Scanner input= new Scanner(System.in);
+System.out.print("Enter size of stack:");
+
+int size=input.nextInt();
+input.close();
+        intStack.push("ha",size);
+        intStack.push("haha",size);
+        intStack.push("hahahaha",size);
         System.out.println(intStack.pop());
        System.out.println(intStack.pop());
         System.out.println(intStack.pop());

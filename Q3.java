@@ -10,8 +10,6 @@ public class Q3 {
             return ;
         }
 
-        else
-        {
           
         
 
@@ -35,7 +33,7 @@ public class Q3 {
         
         }
 
-    }
+    
     public static void main(String args[])
     {
         List<int[]> intervals = new ArrayList<int[]>(10);//([1,3],[2,6],[8,10],[15,18]);
